@@ -3,6 +3,7 @@
 <head>
 	<title>first codesketch!</title>
 
+
 	<style type="text/css">
 		
 		#sentence {
@@ -88,16 +89,69 @@
 
 
 		}
+
+		<script type="text/javascript">
+	var box = document.getElementById('box');
+
+	var space = document.getElementById('spaceAbove');
+
+	box.addEventListener("mouseover", function(){
+
+		space.innerText = "zach";
 	</style>
 
 </head>
 <body>
     <p id="sentence"> Zach loves . . . </p>
     <center>
-        <div id="box" class="bob"> </div>
+        <div id="box" class="bob"></div>
         <div id="box2" class="bob"></div>
         <div id="box3" class="bob"></div>
     </center>
 </body>
 
+</html>
+
+
+
+
+
+!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#spaceAbove{
+			width:300px;
+			height:30px;
+/*			border: 1px solid black;
+*/		}
+		#zach{
+			width:300px;
+			height:200px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+<div id="spaceAbove"></div>
+<div id="zach"></div>
+
+<script type="text/javascript">
+	var box = document.getElementById('zach');
+
+	var space = document.getElementById('spaceAbove');
+
+	box.addEventListener("mouseover", function(){
+
+		space.innerText = "zach";
+
+	}
+
+		)
+</script>
+</body>
 </html>
