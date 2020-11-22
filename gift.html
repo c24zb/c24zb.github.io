@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		body{
+
+			background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2019/newstudyhelp.jpg);
+		}
+
+		p{
+			font-family:courier;
+			font-size:45px;
+		}
+
+		#blank{
+			font-family:courier;
+			font-size:45px;
+			border:1px dotted red;
+			width:600px;
+			height:200px;
+			color:darkcyan;
+		}
+
+		#bob{
+		
+			border:1px dotted red;
+			width:600px;
+			height:300px;
+			background-image: url(https://wallpaperaccess.com/full/1314739.jpg);
+			background-size: cover;
+
+		}
+		
+	</style>
+</head>
+<body>
+<p>
+Happy Thanksgiving and 
+I wish I could . . .
+
+</p>
+
+<div id="blank"></div>
+<div id="bob"></div>
+
+
+
+<script type="text/javascript">
+	
+	var array = [
+	"be with you ",
+	"eat dinner with you",
+	"have a sleepover with you",
+	"beat you in a pillow fight",
+	"hug you",
+	"watch the news with you",
+	"play card games with you"
+
+	]
+
+	var box = document.getElementById("blank");
+	box.addEventListener("click",
+function() {
+var x = Math.round(Math.random()*6)
+	box.innerText = array[x];
+
+}
+		);
+
+
+
+
+</script>
+
+
+</body>
+</html>

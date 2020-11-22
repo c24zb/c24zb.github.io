@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+​
+​
+<style type="text/css">
+	
+	body{
+		background-size:cover;
+		background-repeat:no-repeat;
+​
+	}
+</style>
+​
+</head>
+<body>
+​
+​
+​<script type="text/javascript">
+
+var array = [
+
+"url(https://i1.wp.com/curiosityguide.org/wp-content/uploads/2020/09/Cloud-Types.jpg?fit=1361%2C850&ssl=1)",
+​
+"url(https://www.ephotozine.com/resize/2019/06/xlrg/37893_1550144857.jpg?RTUdGk5cXyJFBQgJVANtcQlnYF8JERFaGwJRNQh6SlYUAEw1cmsCdg1hAWoxXFNGLSI=)",
+​
+"url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg)"
+​
+];
+​
+​
+​
+		document.addEventListener("click",
+			function(){
+				var randomNumber = 
+				Math.round(Math.random()*2);
+​
+			document.body.style.backgroundImage=array[randomNumber]
+​
+			console.log(randomNumber)
+​
+			}
+		
+​)
+​
+​
+	</script>
+​
+</body>
+
+</html>
