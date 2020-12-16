@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		#Z{
+
+			width:700px;
+			height:700px;
+			background-color:red;
+			animation-name:rainbow;
+			animation-duration: 2.5s;
+			transition:0.33s;
+			animation-iteration-count: infinite;
+
+		}
+
+			@keyframes rainbow{
+
+				0%{
+
+					border-radius: 0%;
+					background-color:red;
+				}
+
+				30%{
+
+					border-radius: 50%;
+					background-color:orange;
+				}
+
+				45%{
+
+					border-radius: 0%;
+					background-color:yellow;
+				}
+
+				65%{
+
+					border-radius: 50%;
+					background-color:green;
+				}
+
+				80%{
+					border-radius: 0%;
+					background-color:blue;
+
+				}
+
+				90%{
+
+					border-radius: 50%;
+					background-color:indigo;
+
+				}
+
+				100%{
+
+					border-radius: 0%;
+					background-color:violet;
+				}
+			}
+		
+
+
+
+
+	</style>
+</head>
+<body>
+<div id="Z"></div>
+</body>
+</html>
