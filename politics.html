@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		body{
+
+			background-image: url(https://www.xmple.com/wallpaper/gradient-red-linear-blue-1920x1200-c2-ff0000-1e90ff-a-0-f-14.svg);
+
+		}
+
+		p{
+			font-family:courier;
+			font-size:38px;
+		}
+
+		#blank{
+			font-family:courier;
+			font-size:100px;
+			border:2px dotted black;
+			width:1255px;
+			height:350px;
+			color:orange;
+			position: center;
+		}
+
+		
+	</style>
+</head>
+<body>
+<p>
+The issues people cared about in the 2020 general election. They will appear randomly, but the issues that more people put as their most important issue will have a higher probability of appering. 
+</p>
+
+<a id="why"><div id="blank"></div></a>
+
+
+
+<script type="text/javascript">
+	
+	var array1 = [
+	"climate change",
+	"climate change",
+	"climate change",
+	"COVID-19",
+	"COVID-19",
+	"COVID-19",
+	"unity",
+	"economy",
+	"economy",
+	"women's rights",
+	"BLM",
+	"getting Trump out of office",
+	"who gets elected",
+	"LBGTQ rights",
+	"telling the truth - the lies were frustrating"
+
+	]
+
+	var array2 = [
+	"climate change.html",
+	"climate change.html",
+	"climate change.html",
+	"COVID-19.html",
+	"COVID-19.html",
+	"COVID-19.html",
+	"unity.html",
+	"economy.html",
+	"economy.html",
+	"women's rights.html",
+	"BLM.html",
+	"Trump out of office.html",
+	"who gets elected.html",
+	"LBGTQ rights.html",
+	"telling the truth.html"
+
+
+
+	]
+	var link = document.getElementById("why");
+	var box = document.getElementById("blank");
+	box.addEventListener("click",function() {
+var x = Math.round(Math.random()*13)
+	box.innerText = array1[x];
+	console.log (array2[x]);
+	link.href=array2[x];
+
+
+}
+		);
+
+
+
+
+</script>
+
+
+</body>
+</html>

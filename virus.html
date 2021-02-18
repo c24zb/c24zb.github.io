@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+	
+
+		.writing{
+			color:black;
+			font-size:10px;
+			display: relative;
+			display: inline-block;
+			margin:5px;
+			width:50px;
+			height:50px;
+			background-image:url(https://i.pinimg.com/originals/7a/98/1d/7a981de80cfa0a7aa92f5d523d3509cc.jpg);
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+	</style>
+</head>
+<body>
+<h1>This is how many people who have had covid in the US - 1 person = 1000(as of when I made this - I am sure the number will increase) cases</h1>
+
+<script type="text/javascript">
+	
+	var counter = 0;
+
+	function makePeople (x){
+		counter= counter +1;
+		let bored = document.createElement('div');
+		document.body.appendChild(bored);
+		bored.classList.add("writing");
+		
+
+		if (counter >=15000) {clearInterval(people)}
+
+
+
+	};
+
+	
+
+
+
+// for (let i=0;i<15; i=i+1) {makePeople(i)}
+
+	var people = setInterval(makePeople, 30)
+
+
+</script>	
+
+
+</body>
+</html>
